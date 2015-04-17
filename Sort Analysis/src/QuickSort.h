@@ -8,6 +8,6 @@
 #ifndef QUICKSORT_H_
 #define QUICKSORT_H_
 
-extern double quicksort(int *, int, int);
+extern void QuickSort(int *, int, int);
 
 #endif /* QUICKSORT_H_ */

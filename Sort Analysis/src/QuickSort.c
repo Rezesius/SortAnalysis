@@ -6,6 +6,7 @@
  */
 
 #include <stdio.h>
+#include <stdlib.h>
 
 void swap ( int *a, int *b )
 {
@@ -32,7 +33,7 @@ int partition (int *arr, int l, int h)
     return (i + 1);
 }
 
-double quicksort(int *arr,int l, int h)
+void QuickSort(int *arr,int l, int h)
 {
 	// Create an auxiliary stack
 	int *stack = malloc(sizeof(int)*(h - l + 1));
