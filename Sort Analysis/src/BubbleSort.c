@@ -13,5 +13,5 @@ void BubbleSort(int *array, int n)
    for (i = 0; i < n; i++)
        for (j = 0; j < n-i-1; j++) //Last i elements are already in place
            if (*(array + j) > *(array + j + 1))
-              swap((array + j), *(array + j + 1));
+              swap((array + j), (array + j + 1));
 }
