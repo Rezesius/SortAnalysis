@@ -9,7 +9,6 @@
  */
 
 #include <stdio.h>
-#include <stdlib.h>
 #include "SortMenu.h"
 
 #define out stdout

@@ -7,13 +7,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-
-void swap ( int *a, int *b )
-{
-    int t = *a;
-    *a = *b;
-    *b = t;
-}
+#include "Swap.h"
 
 /* This function is same in both iterative and recursive*/
 int partition (int *arr, int l, int h)
