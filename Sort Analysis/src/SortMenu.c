@@ -20,8 +20,8 @@
 void callsort()
 {
 	time_t t;
-	clock_t start[], end[];
-	double cpu_time_used[];
+	clock_t start[100], end[100];
+	double cpu_time_used[100];
 	srand((unsigned) time(&t));
 	int *qs, size, *hs;
 	size = rand() % lim;
@@ -32,10 +32,10 @@ void callsort()
 	end[0] = clock();
 	cpu_time_used[0] = ((double) (end[0] - start[0])) / CLOCKS_PER_SEC;
 	struct node *head = NULL;
-	randgenlist(head, size);
+	genrandlist(head, size);
 	start[1] = clock();
 	cpu_time_used[1] = ((double) (end[1] - start[1])) / CLOCKS_PER_SEC;
-	MergeSort(&head);
+	MergeSort(head);
 	end[1] = clock();
 	start[2] = clock();
 	HeapSort(hs, size);

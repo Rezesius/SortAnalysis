@@ -5,9 +5,11 @@
  *      Author: aditya
  */
 
+#include "Structs.h"
+
 #ifndef MERGESORT_H_
 #define MERGESORT_H_
 
-extern void mergesort();
+extern void MergeSort(struct node *);
 
 #endif /* MERGESORT_H_ */
