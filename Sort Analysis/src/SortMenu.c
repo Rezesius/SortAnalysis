@@ -10,6 +10,7 @@
 #include <time.h>
 #include "QuickSort.h"
 #include "MergeSort.h"
+#include "HeapSort.h"
 #include "RandGen.h"
 #include "Structs.h"
 
@@ -22,9 +23,10 @@ void callsort()
 	clock_t start[], end[];
 	double cpu_time_used[];
 	srand((unsigned) time(&t));
-	int *qs, size;
+	int *qs, size, *hs;
 	size = rand() % lim;
 	qs = genrandarr(size);
+	hs = genrandarr(size);
 	start[0] = clock();
 	QuickSort(qs, 0, size);
 	end[0] = clock();
@@ -32,6 +34,12 @@ void callsort()
 	struct node *head = NULL;
 	randgenlist(head, size);
 	start[1] = clock();
+	cpu_time_used[1] = ((double) (end[1] - start[1])) / CLOCKS_PER_SEC;
 	MergeSort(&head);
 	end[1] = clock();
+	start[2] = clock();
+	HeapSort(hs, size);
+	end[2] = clock();
+	cpu_time_used[2] = ((double) (end[2] - start[2])) / CLOCKS_PER_SEC;
+
 }

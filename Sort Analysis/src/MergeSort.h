@@ -8,6 +8,6 @@
 #ifndef MERGESORT_H_
 #define MERGESORT_H_
 
-extern void mergesort(struct node *);
+extern void mergesort();
 
 #endif /* MERGESORT_H_ */

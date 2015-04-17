@@ -9,6 +9,6 @@
 #define RANDGEN_H_
 
 extern int* genrandarr(int);
-extern void genrandlist(struct node *, int);
+extern void genrandlist(int);
 
 #endif /* RANDGEN_H_ */
