@@ -5,6 +5,8 @@
  *      Author: aditya
  */
 
+#include <stdlib.h>
+
 void BucketSort(int *array, int size)
 {
     int i, j;

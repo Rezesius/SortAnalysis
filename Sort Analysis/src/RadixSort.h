@@ -8,6 +8,6 @@
 #ifndef RADIXSORT_H_
 #define RADIXSORT_H_
 
-
+extern void RadixSort(int *, int);
 
 #endif /* RADIXSORT_H_ */

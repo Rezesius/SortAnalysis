@@ -5,6 +5,8 @@
  *      Author: aditya
  */
 
+#include <stdlib.h>
+
 // A utility function to get maximum value in array
 int getMax(int *array, int size)
 {

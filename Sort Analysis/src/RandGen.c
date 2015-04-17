@@ -20,7 +20,7 @@ void alloc(struct node** head_ref, int new_data)
     (*head_ref) = new_node;
 }
 
-int genrandarr(int size)
+int* genrandarr(int size)
 {
 	time_t t;
 	srand((unsigned) time(&t));
