@@ -16,6 +16,9 @@
 #include "BubbleSort.h"
 #include "BucketSort.h"
 #include "CombSort.h"
+#include "ShellSort.h"
+#include "GnomeSort.h"
+#include "RadixSort.h"
 #include "RandGen.h"
 #include "Structs.h"
 
@@ -28,7 +31,7 @@ void callsort()
 	clock_t start[100], end[100]; //Needs to be changed. Reduce 100 to number of sorting techniques
 	double cpu_time_used[100];    //used in the program
 	srand((unsigned) time(&t));
-	int *qs, size, *hs, *is, *ss, *bs, *bucs, *cs;
+	int *qs, size, *hs, *is, *ss, *bs, *bucs, *cs, *shs, *gs, *rs;
 	size = rand() % lim;
 	qs = genrandarr(size);
 	hs = genrandarr(size);
@@ -37,6 +40,9 @@ void callsort()
 	bs = genrandarr(size);
 	bucs = genrandarr(size);
 	cs = genrandarr(size);
+	shs = genrandarr(size);
+	gs = genrandarr(size);
+	rs = genrandarr(size);
 	start[0] = clock();
 	QuickSort(qs, 0, size);
 	end[0] = clock();
@@ -71,4 +77,16 @@ void callsort()
 	CombSort(cs, size);
 	end[7] = clock();
 	cpu_time_used[7] = ((double) (end[7] - start[7])) / CLOCKS_PER_SEC;
+	start[8] = clock();
+	ShellSort(shs, size);
+	end[8] = clock();
+	cpu_time_used[8] = ((double) (end[8] - start[8])) / CLOCKS_PER_SEC;
+	start[9] = clock();
+	GnomeSort(gs, size);
+	end[9] = clock();
+	cpu_time_used[9] = ((double) (end[9] - start[9])) / CLOCKS_PER_SEC;
+	start[10] = clock();
+	RadixSort(rs, size);
+	end[10] = clock();
+	cpu_time_used[10] = ((double) (end[10] - start[10])) / CLOCKS_PER_SEC;
 }
