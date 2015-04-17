@@ -10,8 +10,13 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include "SortMenu.h"
 
-int main(void) {
-	puts("!!!Hello World!!!");
+#define out stdout
+
+int main(void)
+{
+	fprintf(out, "\nSorting Algorithms Analysis \n\n");
+	callsort();
 	return 0;
 }
