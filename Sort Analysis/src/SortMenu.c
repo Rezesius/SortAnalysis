@@ -20,8 +20,8 @@
 void callsort()
 {
 	time_t t;
-	clock_t start[100], end[100];
-	double cpu_time_used[100];
+	clock_t start[100], end[100]; //Needs to be changed. Reduce 100 to number of sorting techniques
+	double cpu_time_used[100];    //used in the program
 	srand((unsigned) time(&t));
 	int *qs, size, *hs;
 	size = rand() % lim;
