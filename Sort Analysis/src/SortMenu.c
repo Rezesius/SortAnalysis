@@ -20,7 +20,6 @@
 #include "GnomeSort.h"
 #include "RadixSort.h"
 #include "RandGen.h"
-#include "Structs.h"
 
 #define out stdout
 #define lim 100
