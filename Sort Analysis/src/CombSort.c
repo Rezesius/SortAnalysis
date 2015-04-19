@@ -15,7 +15,7 @@ int newgap(int gap)
     return gap;
 }
 
-/*Function to implement the combsort*/
+/*Function to implement the CombSort*/
 void CombSort(int *array, int size)
 {
     int gap = size;

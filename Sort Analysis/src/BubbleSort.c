@@ -7,11 +7,11 @@
 
 #include "Swap.h"
 
-void BubbleSort(int *array, int n)
+void BubbleSort(int *array, int size)
 {
    int i, j;
-   for (i = 0; i < n; i++)
-       for (j = 0; j < n-i-1; j++) //Last i elements are already in place
+   for (i = 0; i < size; i++)
+       for (j = 0; j < size-i-1; j++) //Last i elements are already in place
            if (*(array + j) > *(array + j + 1))
               swap((array + j), (array + j + 1));
 }

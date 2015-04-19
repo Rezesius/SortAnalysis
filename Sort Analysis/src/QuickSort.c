@@ -10,27 +10,27 @@
 #include "Swap.h"
 
 /* This function is same in both iterative and recursive*/
-int partition (int *arr, int l, int h)
+int partition (int *array, int l, int h)
 {
-    int x = *(arr + h);
+    int x = *(array + h);
     int i = (l - 1);
 
     for (int j = l; j <= h - 1; j++)
     {
-        if (*(arr + j) <= x)
+        if (*(array + j) <= x)
         {
             i++;
-            swap ((arr + i), (arr + j));
+            swap ((array + i), (array + j));
         }
     }
-    swap ((arr + i + 1), (arr + h));
+    swap ((array + i + 1), (array + h));
     return (i + 1);
 }
 
-void QuickSort(int *arr,int l, int h)
+void QuickSort(int *array, int l, int h)
 {
 	// Create an auxiliary stack
-	int *stack = malloc(sizeof(int)*(h - l + 1));
+	int *stack = malloc(sizeof(int) * (h - l + 1));
 
 	// initialize top of stack
 	int top = -1;
@@ -47,11 +47,11 @@ void QuickSort(int *arr,int l, int h)
 	    l = *(stack + top--);
 
 	    // Set pivot element at its correct position in sorted array
-	    int p = partition( arr, l, h );
+	    int p = partition( array, l, h );
 
 	    /* If there are elements on left side of pivot, then push left
 	     side to stack */
-	    if ( p-1 > l )
+	    if ( p - 1 > l )
 	    {
 	    	*(stack + ++top) = l;
 	    	*(stack + ++top) = p - 1;
@@ -59,7 +59,7 @@ void QuickSort(int *arr,int l, int h)
 
 	    /* If there are elements on right side of pivot, then push right
 	     side to stack */
-	    if ( p+1 < h )
+	    if ( p + 1 < h )
 	    {
 	    	*(stack + ++top) = p + 1;
 	    	*(stack + ++top) = h;

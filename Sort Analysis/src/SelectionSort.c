@@ -12,11 +12,11 @@ void SelectionSort(int *array, int size)
     int i, j, min_idx;
 
     // One by one move boundary of unsorted sub array
-    for (i = 0; i < size-1; i++)
+    for (i = 0; i < size - 1; i++)
     {
         // Find the minimum element in unsorted array
     	min_idx = i;
-        for (j = i+1; j < size; j++)
+        for (j = i + 1; j < size; j++)
         	if (*(array + j) < *(array + min_idx))
         		min_idx = j;
 
