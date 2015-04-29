@@ -12,7 +12,7 @@
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.llvm.clang.linux.exe.debug.1885680821" name="Debug" parent="cdt.managedbuild.config.llvm.clang.linux.exe.debug">
+				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.llvm.clang.linux.exe.debug.1885680821" name="Debug" parent="cdt.managedbuild.config.llvm.clang.linux.exe.debug">
 					<folderInfo id="cdt.managedbuild.config.llvm.clang.linux.exe.debug.1885680821." name="/" resourcePath="">
 						<toolChain id="cdt.managedbuild.toolchain.llvm.clang.linux.exe.debug.1875829717" name="LLVM with Clang (Linux)" superClass="cdt.managedbuild.toolchain.llvm.clang.linux.exe.debug">
 							<targetPlatform archList="all" id="cdt.managedbuild.target.llvm.clang.linux.platform.exe.debug.1806323677" name="Debug Platform" osList="linux,hpux,aix,qnx" superClass="cdt.managedbuild.target.llvm.clang.linux.platform.exe.debug"/>
@@ -46,6 +46,18 @@
 							</tool>
 						</toolChain>
 					</folderInfo>
+					<fileInfo id="cdt.managedbuild.config.llvm.clang.linux.exe.debug.1885680821.46221948" name="QuickSort.c" rcbsApplicability="disable" resourcePath="src/QuickSort.c" toolsToInvoke="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974.281338477">
+						<tool id="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974.281338477" name="LLVM Clang" superClass="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974">
+							<option id="llvm.c_cpp.compiler.option.optimization.level.544868379" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" value="llvm.c_cpp.compiler.optimization.level.most" valueType="enumerated"/>
+							<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.1466875521" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
+						</tool>
+						<tool customBuildStep="true" id="org.eclipse.cdt.managedbuilder.ui.rcbs.1169922673" name="Resource Custom Build Step">
+							<inputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.inputtype.393647428" name="Resource Custom Build Step Input Type">
+								<additionalInput kind="additionalinputdependency" paths=""/>
+							</inputType>
+							<outputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.outputtype.2138311313" name="Resource Custom Build Step Output Type"/>
+						</tool>
+					</fileInfo>
 					<fileInfo id="cdt.managedbuild.config.llvm.clang.linux.exe.debug.1885680821.199412833" name="GnomeSort.c" rcbsApplicability="disable" resourcePath="src/GnomeSort.c" toolsToInvoke="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974.1632833095">
 						<tool id="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974.1632833095" name="LLVM Clang" superClass="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974">
 							<option id="llvm.c_cpp.compiler.option.optimization.level.788225538" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" value="llvm.c_cpp.compiler.optimization.level.most" valueType="enumerated"/>
@@ -56,102 +68,6 @@
 								<additionalInput kind="additionalinputdependency" paths=""/>
 							</inputType>
 							<outputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.outputtype.1509488418" name="Resource Custom Build Step Output Type"/>
-						</tool>
-					</fileInfo>
-					<fileInfo id="cdt.managedbuild.config.llvm.clang.linux.exe.debug.1885680821.1340575612" name="CombSort.c" rcbsApplicability="disable" resourcePath="src/CombSort.c" toolsToInvoke="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974.1246981104">
-						<tool id="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974.1246981104" name="LLVM Clang" superClass="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974">
-							<option id="llvm.c_cpp.compiler.option.optimization.level.1943305578" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" value="llvm.c_cpp.compiler.optimization.level.most" valueType="enumerated"/>
-							<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.1402356506" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
-						</tool>
-						<tool customBuildStep="true" id="org.eclipse.cdt.managedbuilder.ui.rcbs.2070441747" name="Resource Custom Build Step">
-							<inputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.inputtype.200309241" name="Resource Custom Build Step Input Type">
-								<additionalInput kind="additionalinputdependency" paths=""/>
-							</inputType>
-							<outputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.outputtype.1807405683" name="Resource Custom Build Step Output Type"/>
-						</tool>
-					</fileInfo>
-					<fileInfo id="cdt.managedbuild.config.llvm.clang.linux.exe.debug.1885680821.1171094604" name="RadixSort.c" rcbsApplicability="disable" resourcePath="src/RadixSort.c" toolsToInvoke="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974.262219490">
-						<tool id="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974.262219490" name="LLVM Clang" superClass="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974">
-							<option id="llvm.c_cpp.compiler.option.optimization.level.1371442720" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" value="llvm.c_cpp.compiler.optimization.level.most" valueType="enumerated"/>
-							<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.1844200809" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
-						</tool>
-						<tool customBuildStep="true" id="org.eclipse.cdt.managedbuilder.ui.rcbs.66843001" name="Resource Custom Build Step">
-							<inputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.inputtype.1088931362" name="Resource Custom Build Step Input Type">
-								<additionalInput kind="additionalinputdependency" paths=""/>
-							</inputType>
-							<outputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.outputtype.213251070" name="Resource Custom Build Step Output Type"/>
-						</tool>
-					</fileInfo>
-					<fileInfo id="cdt.managedbuild.config.llvm.clang.linux.exe.debug.1885680821.1077760357" name="Swap.c" rcbsApplicability="disable" resourcePath="src/Swap.c" toolsToInvoke="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974.1064297362">
-						<tool id="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974.1064297362" name="LLVM Clang" superClass="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974">
-							<option id="llvm.c_cpp.compiler.option.optimization.level.1713338623" superClass="llvm.c_cpp.compiler.option.optimization.level" value="llvm.c_cpp.compiler.optimization.level.most" valueType="enumerated"/>
-							<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.766579553" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
-						</tool>
-						<tool customBuildStep="true" id="org.eclipse.cdt.managedbuilder.ui.rcbs.2038286390" name="Resource Custom Build Step">
-							<inputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.inputtype.56235141" name="Resource Custom Build Step Input Type">
-								<additionalInput kind="additionalinputdependency" paths=""/>
-							</inputType>
-							<outputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.outputtype.232415133" name="Resource Custom Build Step Output Type"/>
-						</tool>
-					</fileInfo>
-					<fileInfo id="cdt.managedbuild.config.llvm.clang.linux.exe.debug.1885680821.324765129" name="BucketSort.c" rcbsApplicability="disable" resourcePath="src/BucketSort.c" toolsToInvoke="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974.772058028">
-						<tool id="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974.772058028" name="LLVM Clang" superClass="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974">
-							<option id="llvm.c_cpp.compiler.option.optimization.level.1442167077" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" value="llvm.c_cpp.compiler.optimization.level.most" valueType="enumerated"/>
-							<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.1846532805" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
-						</tool>
-						<tool customBuildStep="true" id="org.eclipse.cdt.managedbuilder.ui.rcbs.325667833" name="Resource Custom Build Step">
-							<inputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.inputtype.1708418622" name="Resource Custom Build Step Input Type">
-								<additionalInput kind="additionalinputdependency" paths=""/>
-							</inputType>
-							<outputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.outputtype.726129071" name="Resource Custom Build Step Output Type"/>
-						</tool>
-					</fileInfo>
-					<fileInfo id="cdt.managedbuild.config.llvm.clang.linux.exe.debug.1885680821.359597641" name="BubbleSort.c" rcbsApplicability="disable" resourcePath="src/BubbleSort.c" toolsToInvoke="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974.489749183">
-						<tool id="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974.489749183" name="LLVM Clang" superClass="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974">
-							<option id="llvm.c_cpp.compiler.option.optimization.level.1023387589" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" value="llvm.c_cpp.compiler.optimization.level.most" valueType="enumerated"/>
-							<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.307048969" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
-						</tool>
-						<tool customBuildStep="true" id="org.eclipse.cdt.managedbuilder.ui.rcbs.288349660" name="Resource Custom Build Step">
-							<inputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.inputtype.376261891" name="Resource Custom Build Step Input Type">
-								<additionalInput kind="additionalinputdependency" paths=""/>
-							</inputType>
-							<outputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.outputtype.1054073718" name="Resource Custom Build Step Output Type"/>
-						</tool>
-					</fileInfo>
-					<fileInfo id="cdt.managedbuild.config.llvm.clang.linux.exe.debug.1885680821.1461961391" name="SortMenu.c" rcbsApplicability="disable" resourcePath="src/SortMenu.c" toolsToInvoke="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974.1055476293">
-						<tool id="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974.1055476293" name="LLVM Clang" superClass="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974">
-							<option id="llvm.c_cpp.compiler.option.optimization.level.154099832" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" value="llvm.c_cpp.compiler.optimization.level.most" valueType="enumerated"/>
-							<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.996078034" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
-						</tool>
-						<tool customBuildStep="true" id="org.eclipse.cdt.managedbuilder.ui.rcbs.978991436" name="Resource Custom Build Step">
-							<inputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.inputtype.989165188" name="Resource Custom Build Step Input Type">
-								<additionalInput kind="additionalinputdependency" paths=""/>
-							</inputType>
-							<outputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.outputtype.1504166435" name="Resource Custom Build Step Output Type"/>
-						</tool>
-					</fileInfo>
-					<fileInfo id="cdt.managedbuild.config.llvm.clang.linux.exe.debug.1885680821.1493794603" name="HeapSort.c" rcbsApplicability="disable" resourcePath="src/HeapSort.c" toolsToInvoke="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974.1298384023">
-						<tool id="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974.1298384023" name="LLVM Clang" superClass="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974">
-							<option id="llvm.c_cpp.compiler.option.optimization.level.217179328" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" value="llvm.c_cpp.compiler.optimization.level.most" valueType="enumerated"/>
-							<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.57787425" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
-						</tool>
-						<tool customBuildStep="true" id="org.eclipse.cdt.managedbuilder.ui.rcbs.1163129502" name="Resource Custom Build Step">
-							<inputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.inputtype.1596736843" name="Resource Custom Build Step Input Type">
-								<additionalInput kind="additionalinputdependency" paths=""/>
-							</inputType>
-							<outputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.outputtype.1650503378" name="Resource Custom Build Step Output Type"/>
-						</tool>
-					</fileInfo>
-					<fileInfo id="cdt.managedbuild.config.llvm.clang.linux.exe.debug.1885680821.758479917" name="MergeSort.c" rcbsApplicability="disable" resourcePath="src/MergeSort.c" toolsToInvoke="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974.72544943">
-						<tool id="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974.72544943" name="LLVM Clang" superClass="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974">
-							<option id="llvm.c_cpp.compiler.option.optimization.level.1841805317" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" value="llvm.c_cpp.compiler.optimization.level.most" valueType="enumerated"/>
-							<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.33774694" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
-						</tool>
-						<tool customBuildStep="true" id="org.eclipse.cdt.managedbuilder.ui.rcbs.1665295613" name="Resource Custom Build Step">
-							<inputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.inputtype.2015321731" name="Resource Custom Build Step Input Type">
-								<additionalInput kind="additionalinputdependency" paths=""/>
-							</inputType>
-							<outputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.outputtype.1997844278" name="Resource Custom Build Step Output Type"/>
 						</tool>
 					</fileInfo>
 					<fileInfo id="cdt.managedbuild.config.llvm.clang.linux.exe.debug.1885680821.843117902" name="InsertionSort.c" rcbsApplicability="disable" resourcePath="src/InsertionSort.c" toolsToInvoke="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974.464539077">
@@ -166,48 +82,16 @@
 							<outputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.outputtype.1008150097" name="Resource Custom Build Step Output Type"/>
 						</tool>
 					</fileInfo>
-					<fileInfo id="cdt.managedbuild.config.llvm.clang.linux.exe.debug.1885680821.115726417" name="Sort Analysis.c" rcbsApplicability="disable" resourcePath="src/Sort Analysis.c" toolsToInvoke="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974.1750219050">
-						<tool id="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974.1750219050" name="LLVM Clang" superClass="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974">
-							<option id="llvm.c_cpp.compiler.option.optimization.level.1499767991" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" value="llvm.c_cpp.compiler.optimization.level.most" valueType="enumerated"/>
-							<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.702138393" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
+					<fileInfo id="cdt.managedbuild.config.llvm.clang.linux.exe.debug.1885680821.532906456" name="RandGen.c" rcbsApplicability="disable" resourcePath="src/RandGen.c" toolsToInvoke="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974.1323077980">
+						<tool id="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974.1323077980" name="LLVM Clang" superClass="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974">
+							<option id="llvm.c_cpp.compiler.option.optimization.level.2078873388" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" value="llvm.c_cpp.compiler.optimization.level.most" valueType="enumerated"/>
+							<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.114530525" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
 						</tool>
-						<tool customBuildStep="true" id="org.eclipse.cdt.managedbuilder.ui.rcbs.1103393248" name="Resource Custom Build Step">
-							<inputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.inputtype.1087749023" name="Resource Custom Build Step Input Type">
+						<tool customBuildStep="true" id="org.eclipse.cdt.managedbuilder.ui.rcbs.512183749" name="Resource Custom Build Step">
+							<inputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.inputtype.152397205" name="Resource Custom Build Step Input Type">
 								<additionalInput kind="additionalinputdependency" paths=""/>
 							</inputType>
-							<outputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.outputtype.2068335211" name="Resource Custom Build Step Output Type"/>
-						</tool>
-					</fileInfo>
-					<fileInfo id="cdt.managedbuild.config.llvm.clang.linux.exe.debug.1885680821.46221948" name="QuickSort.c" rcbsApplicability="disable" resourcePath="src/QuickSort.c" toolsToInvoke="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974.281338477">
-						<tool id="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974.281338477" name="LLVM Clang" superClass="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974">
-							<option id="llvm.c_cpp.compiler.option.optimization.level.544868379" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" value="llvm.c_cpp.compiler.optimization.level.most" valueType="enumerated"/>
-							<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.1466875521" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
-						</tool>
-						<tool customBuildStep="true" id="org.eclipse.cdt.managedbuilder.ui.rcbs.1169922673" name="Resource Custom Build Step">
-							<inputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.inputtype.393647428" name="Resource Custom Build Step Input Type">
-								<additionalInput kind="additionalinputdependency" paths=""/>
-							</inputType>
-							<outputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.outputtype.2138311313" name="Resource Custom Build Step Output Type"/>
-						</tool>
-					</fileInfo>
-					<fileInfo id="cdt.managedbuild.config.llvm.clang.linux.exe.debug.1885680821.345075878" name="SelectionSort.c" rcbsApplicability="disable" resourcePath="src/SelectionSort.c" toolsToInvoke="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974.642953450">
-						<tool id="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974.642953450" name="LLVM Clang" superClass="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974">
-							<option id="llvm.c_cpp.compiler.option.optimization.level.382266504" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" value="llvm.c_cpp.compiler.optimization.level.most" valueType="enumerated"/>
-							<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.1118546347" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
-						</tool>
-						<tool customBuildStep="true" id="org.eclipse.cdt.managedbuilder.ui.rcbs.1269662056" name="Resource Custom Build Step">
-							<inputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.inputtype.1856494601" name="Resource Custom Build Step Input Type">
-								<additionalInput kind="additionalinputdependency" paths=""/>
-							</inputType>
-							<outputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.outputtype.893772901" name="Resource Custom Build Step Output Type"/>
-						</tool>
-					</fileInfo>
-					<fileInfo id="cdt.managedbuild.config.llvm.clang.linux.exe.debug.1885680821.1207452478" name="BubbleSort.h" rcbsApplicability="disable" resourcePath="src/BubbleSort.h" toolsToInvoke="">
-						<tool customBuildStep="true" id="org.eclipse.cdt.managedbuilder.ui.rcbs.2053550380" name="Resource Custom Build Step">
-							<inputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.inputtype.1603351240" name="Resource Custom Build Step Input Type">
-								<additionalInput kind="additionalinputdependency" paths=""/>
-							</inputType>
-							<outputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.outputtype.1736981416" name="Resource Custom Build Step Output Type"/>
+							<outputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.outputtype.617750881" name="Resource Custom Build Step Output Type"/>
 						</tool>
 					</fileInfo>
 					<fileInfo id="cdt.managedbuild.config.llvm.clang.linux.exe.debug.1885680821.1472376266" name="ShellSort.c" rcbsApplicability="disable" resourcePath="src/ShellSort.c" toolsToInvoke="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974.302627251">
@@ -222,16 +106,120 @@
 							<outputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.outputtype.1286100518" name="Resource Custom Build Step Output Type"/>
 						</tool>
 					</fileInfo>
-					<fileInfo id="cdt.managedbuild.config.llvm.clang.linux.exe.debug.1885680821.532906456" name="RandGen.c" rcbsApplicability="disable" resourcePath="src/RandGen.c" toolsToInvoke="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974.1323077980">
-						<tool id="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974.1323077980" name="LLVM Clang" superClass="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974">
-							<option id="llvm.c_cpp.compiler.option.optimization.level.2078873388" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" value="llvm.c_cpp.compiler.optimization.level.most" valueType="enumerated"/>
-							<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.114530525" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
+					<fileInfo id="cdt.managedbuild.config.llvm.clang.linux.exe.debug.1885680821.1461961391" name="SortMenu.c" rcbsApplicability="disable" resourcePath="src/SortMenu.c" toolsToInvoke="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974.1055476293">
+						<tool id="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974.1055476293" name="LLVM Clang" superClass="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974">
+							<option id="llvm.c_cpp.compiler.option.optimization.level.154099832" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" value="llvm.c_cpp.compiler.optimization.level.most" valueType="enumerated"/>
+							<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.996078034" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
 						</tool>
-						<tool customBuildStep="true" id="org.eclipse.cdt.managedbuilder.ui.rcbs.512183749" name="Resource Custom Build Step">
-							<inputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.inputtype.152397205" name="Resource Custom Build Step Input Type">
+						<tool customBuildStep="true" id="org.eclipse.cdt.managedbuilder.ui.rcbs.978991436" name="Resource Custom Build Step">
+							<inputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.inputtype.989165188" name="Resource Custom Build Step Input Type">
 								<additionalInput kind="additionalinputdependency" paths=""/>
 							</inputType>
-							<outputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.outputtype.617750881" name="Resource Custom Build Step Output Type"/>
+							<outputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.outputtype.1504166435" name="Resource Custom Build Step Output Type"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.llvm.clang.linux.exe.debug.1885680821.1207452478" name="BubbleSort.h" rcbsApplicability="disable" resourcePath="src/BubbleSort.h" toolsToInvoke="">
+						<tool customBuildStep="true" id="org.eclipse.cdt.managedbuilder.ui.rcbs.2053550380" name="Resource Custom Build Step">
+							<inputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.inputtype.1603351240" name="Resource Custom Build Step Input Type">
+								<additionalInput kind="additionalinputdependency" paths=""/>
+							</inputType>
+							<outputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.outputtype.1736981416" name="Resource Custom Build Step Output Type"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.llvm.clang.linux.exe.debug.1885680821.1340575612" name="CombSort.c" rcbsApplicability="disable" resourcePath="src/CombSort.c" toolsToInvoke="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974.1246981104">
+						<tool id="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974.1246981104" name="LLVM Clang" superClass="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974">
+							<option id="llvm.c_cpp.compiler.option.optimization.level.1943305578" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" value="llvm.c_cpp.compiler.optimization.level.most" valueType="enumerated"/>
+							<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.1402356506" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
+						</tool>
+						<tool customBuildStep="true" id="org.eclipse.cdt.managedbuilder.ui.rcbs.2070441747" name="Resource Custom Build Step">
+							<inputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.inputtype.200309241" name="Resource Custom Build Step Input Type">
+								<additionalInput kind="additionalinputdependency" paths=""/>
+							</inputType>
+							<outputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.outputtype.1807405683" name="Resource Custom Build Step Output Type"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.llvm.clang.linux.exe.debug.1885680821.115726417" name="Sort Analysis.c" rcbsApplicability="disable" resourcePath="src/Sort Analysis.c" toolsToInvoke="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974.1750219050">
+						<tool id="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974.1750219050" name="LLVM Clang" superClass="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974">
+							<option id="llvm.c_cpp.compiler.option.optimization.level.1499767991" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" value="llvm.c_cpp.compiler.optimization.level.most" valueType="enumerated"/>
+							<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.702138393" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
+						</tool>
+						<tool customBuildStep="true" id="org.eclipse.cdt.managedbuilder.ui.rcbs.1103393248" name="Resource Custom Build Step">
+							<inputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.inputtype.1087749023" name="Resource Custom Build Step Input Type">
+								<additionalInput kind="additionalinputdependency" paths=""/>
+							</inputType>
+							<outputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.outputtype.2068335211" name="Resource Custom Build Step Output Type"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.llvm.clang.linux.exe.debug.1885680821.345075878" name="SelectionSort.c" rcbsApplicability="disable" resourcePath="src/SelectionSort.c" toolsToInvoke="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974.642953450">
+						<tool id="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974.642953450" name="LLVM Clang" superClass="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974">
+							<option id="llvm.c_cpp.compiler.option.optimization.level.382266504" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" value="llvm.c_cpp.compiler.optimization.level.most" valueType="enumerated"/>
+							<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.1118546347" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
+						</tool>
+						<tool customBuildStep="true" id="org.eclipse.cdt.managedbuilder.ui.rcbs.1269662056" name="Resource Custom Build Step">
+							<inputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.inputtype.1856494601" name="Resource Custom Build Step Input Type">
+								<additionalInput kind="additionalinputdependency" paths=""/>
+							</inputType>
+							<outputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.outputtype.893772901" name="Resource Custom Build Step Output Type"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.llvm.clang.linux.exe.debug.1885680821.1077760357" name="Swap.c" rcbsApplicability="disable" resourcePath="src/Swap.c" toolsToInvoke="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974.1064297362">
+						<tool id="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974.1064297362" name="LLVM Clang" superClass="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974">
+							<option id="llvm.c_cpp.compiler.option.optimization.level.1713338623" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" value="llvm.c_cpp.compiler.optimization.level.most" valueType="enumerated"/>
+							<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.766579553" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
+						</tool>
+						<tool customBuildStep="true" id="org.eclipse.cdt.managedbuilder.ui.rcbs.2038286390" name="Resource Custom Build Step">
+							<inputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.inputtype.56235141" name="Resource Custom Build Step Input Type">
+								<additionalInput kind="additionalinputdependency" paths=""/>
+							</inputType>
+							<outputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.outputtype.232415133" name="Resource Custom Build Step Output Type"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.llvm.clang.linux.exe.debug.1885680821.758479917" name="MergeSort.c" rcbsApplicability="disable" resourcePath="src/MergeSort.c" toolsToInvoke="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974.72544943">
+						<tool id="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974.72544943" name="LLVM Clang" superClass="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974">
+							<option id="llvm.c_cpp.compiler.option.optimization.level.1841805317" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" value="llvm.c_cpp.compiler.optimization.level.most" valueType="enumerated"/>
+							<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.33774694" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
+						</tool>
+						<tool customBuildStep="true" id="org.eclipse.cdt.managedbuilder.ui.rcbs.1665295613" name="Resource Custom Build Step">
+							<inputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.inputtype.2015321731" name="Resource Custom Build Step Input Type">
+								<additionalInput kind="additionalinputdependency" paths=""/>
+							</inputType>
+							<outputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.outputtype.1997844278" name="Resource Custom Build Step Output Type"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.llvm.clang.linux.exe.debug.1885680821.359597641" name="BubbleSort.c" rcbsApplicability="disable" resourcePath="src/BubbleSort.c" toolsToInvoke="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974.489749183">
+						<tool id="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974.489749183" name="LLVM Clang" superClass="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974">
+							<option id="llvm.c_cpp.compiler.option.optimization.level.1023387589" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" value="llvm.c_cpp.compiler.optimization.level.most" valueType="enumerated"/>
+							<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.307048969" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
+						</tool>
+						<tool customBuildStep="true" id="org.eclipse.cdt.managedbuilder.ui.rcbs.288349660" name="Resource Custom Build Step">
+							<inputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.inputtype.376261891" name="Resource Custom Build Step Input Type">
+								<additionalInput kind="additionalinputdependency" paths=""/>
+							</inputType>
+							<outputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.outputtype.1054073718" name="Resource Custom Build Step Output Type"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.llvm.clang.linux.exe.debug.1885680821.1493794603" name="HeapSort.c" rcbsApplicability="disable" resourcePath="src/HeapSort.c" toolsToInvoke="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974.1298384023">
+						<tool id="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974.1298384023" name="LLVM Clang" superClass="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974">
+							<option id="llvm.c_cpp.compiler.option.optimization.level.217179328" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" value="llvm.c_cpp.compiler.optimization.level.most" valueType="enumerated"/>
+							<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.57787425" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
+						</tool>
+						<tool customBuildStep="true" id="org.eclipse.cdt.managedbuilder.ui.rcbs.1163129502" name="Resource Custom Build Step">
+							<inputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.inputtype.1596736843" name="Resource Custom Build Step Input Type">
+								<additionalInput kind="additionalinputdependency" paths=""/>
+							</inputType>
+							<outputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.outputtype.1650503378" name="Resource Custom Build Step Output Type"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.llvm.clang.linux.exe.debug.1885680821.1171094604" name="RadixSort.c" rcbsApplicability="disable" resourcePath="src/RadixSort.c" toolsToInvoke="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974.262219490">
+						<tool id="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974.262219490" name="LLVM Clang" superClass="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.378248974">
+							<option id="llvm.c_cpp.compiler.option.optimization.level.1371442720" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" value="llvm.c_cpp.compiler.optimization.level.most" valueType="enumerated"/>
+							<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.1844200809" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
+						</tool>
+						<tool customBuildStep="true" id="org.eclipse.cdt.managedbuilder.ui.rcbs.66843001" name="Resource Custom Build Step">
+							<inputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.inputtype.1088931362" name="Resource Custom Build Step Input Type">
+								<additionalInput kind="additionalinputdependency" paths=""/>
+							</inputType>
+							<outputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.outputtype.213251070" name="Resource Custom Build Step Output Type"/>
 						</tool>
 					</fileInfo>
 					<sourceEntries>

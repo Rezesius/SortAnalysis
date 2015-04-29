@@ -14,7 +14,6 @@
 #include "InsertionSort.h"
 #include "SelectionSort.h"
 #include "BubbleSort.h"
-#include "BucketSort.h"
 #include "CombSort.h"
 #include "ShellSort.h"
 #include "GnomeSort.h"
@@ -30,14 +29,13 @@ void callsort()
 	clock_t *start = malloc(sizeof(clock_t) * 11), *end = malloc(sizeof(clock_t) * 11);
 	double *cpu_time_used = malloc(sizeof(double)*11);
 	srand((unsigned) time(&t));
-	int *qs, *hs, *is, *ss, *bs, *bucs, *cs, *shs, *gs, *rs, size;
+	int *qs, *hs, *is, *ss, *bs, *cs, *shs, *gs, *rs, size;
 	size = rand() % lim;
 	qs = genrandarr(size);
 	hs = genrandarr(size);
 	is = genrandarr(size);
 	ss = genrandarr(size);
 	bs = genrandarr(size);
-	bucs = genrandarr(size);
 	cs = genrandarr(size);
 	shs = genrandarr(size);
 	gs = genrandarr(size);
@@ -76,27 +74,22 @@ void callsort()
 	*(cpu_time_used + 5) = ((double) (*(end + 5) - *(start + 5))) / CLOCKS_PER_SEC;
 
 	*(start + 6) = clock();
-	BucketSort(bucs, size);
+	CombSort(cs, size);
 	*(end + 6) = clock();
 	*(cpu_time_used + 6) = ((double) (*(end + 6) - *(start + 6))) / CLOCKS_PER_SEC;
 
 	*(start + 7) = clock();
-	CombSort(cs, size);
+	ShellSort(shs, size);
 	*(end + 7) = clock();
 	*(cpu_time_used + 7) = ((double) (*(end + 7) - *(start + 7))) / CLOCKS_PER_SEC;
 
 	*(start + 8) = clock();
-	ShellSort(shs, size);
+	GnomeSort(gs, size);
 	*(end + 8) = clock();
 	*(cpu_time_used + 8) = ((double) (*(end + 8) - *(start + 8))) / CLOCKS_PER_SEC;
 
 	*(start + 9) = clock();
-	GnomeSort(gs, size);
+	RadixSort(rs, size);
 	*(end + 9) = clock();
 	*(cpu_time_used + 9) = ((double) (*(end + 9) - *(start + 9))) / CLOCKS_PER_SEC;
-
-	*(start + 10) = clock();
-	RadixSort(rs, size);
-	*(end + 10) = clock();
-	*(cpu_time_used + 10) = ((double) (*(end + 10) - *(start + 10))) / CLOCKS_PER_SEC;
 }
