@@ -26,8 +26,8 @@
 void callsort()
 {
 	time_t t;
-	clock_t *start = malloc(sizeof(clock_t) * 11), *end = malloc(sizeof(clock_t) * 11);
-	double *cpu_time_used = malloc(sizeof(double)*11);
+	clock_t *start = malloc(sizeof(clock_t) * 10), *end = malloc(sizeof(clock_t) * 10);
+	double *cpu_time_used = malloc(sizeof(double) * 10);
 	srand((unsigned) time(&t));
 	int *qs, *hs, *is, *ss, *bs, *cs, *shs, *gs, *rs, size;
 	size = rand() % lim;
