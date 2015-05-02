@@ -9,10 +9,9 @@ Current Algorithm Sub Routines :-
 4. Insertion Sort
 5. Selection Sort
 6. Bubble Sort
-7. Bucket Sort
-8. Comb Sort
-9. Shell Sort
-10. Gnome Sort
-11. Radix Sort
+7. Comb Sort
+8. Shell Sort
+9. Gnome Sort
+10. Radix Sort
 
 All source files located under Sort Analysis/src/
